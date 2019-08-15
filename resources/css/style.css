@@ -1,0 +1,373 @@
+
+/*Basic Setup*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Araial',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+section{
+    padding:40px 0;
+}
+footer{
+    background-color: dimgrey;
+}
+.second{
+    margin-left: 12.5%;  
+}
+.wong{
+    margin-left: 24.9%;
+}
+/*Heading*/
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 240%;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 180%;
+    text-align: center;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+}
+h2:after{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    background-color: #ff2b06;
+    content: "";
+    margin-top: 30px;
+    height: 2px
+}
+h3{
+    font-weight: 300;
+    font-size: 110%;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.ye{
+    font-size: 120%;
+    margin: 0 0;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #e67e22;
+}
+
+
+/*paragraphs*/
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    text-align: center;
+    margin: 2.5% 15%;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+.about{
+    text-align: center;
+    line-height: 145%; 
+    padding-bottom: 2%;
+}
+.chir{
+    margin-top: 30px;
+    line-height: 145%;
+    text-align: center;
+}
+
+/*Buttons*/
+
+.btn:link,
+.btn:visited
+{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s,border 0.2s,color 0.2s;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+    
+    
+}
+.btn:hover,
+.btn:active
+{
+    background-color: #cf6d17;
+}
+
+.btn-full:link,
+.btn-full:visited
+{
+    background-color: #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+.btn-ghost:link,
+.btn-ghost:visited
+{
+    border: 1px solid #e67e22;
+    color: #ff2b06;
+}
+.btn-full:hover,
+.btn-full:active
+{
+    background-color: #cf6d17;
+    color: #fff;
+}
+.btn-ghost:hover,
+.btn-ghost:active
+{
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+/*Header*/
+header{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))),url(img/TEDx%20website%20background.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7))url(img/TEDx%20website%20background.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero-text-box{
+    position: absolute;
+    width:1140px;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    }
+
+.logo{
+    height: 200px;
+    width:auto;
+    float: left;
+    margin-top: -40px;
+    
+}
+.stickylogo{
+    display: none;
+     height: 150px;
+    width:auto;
+    float: left;
+    margin: -40px 0px;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    padding-bottom: 15px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-family: 'Lato','Arial';
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    padding: 8px 0px;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-family: 'Lato','Arial';
+    border-bottom: 2px solid #ff2b06;
+}
+
+/*sticky nav*/
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0px 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    color: #555;
+    padding: 16px 0px;
+}
+.sticky .stickylogo{
+    display: block;
+}
+.sticky .logo{
+    display: none;
+}
+.sticky .main-nav{
+    margin-top: 18px;
+}
+
+/*icons*/
+.bigg{
+    font-size: 350%;
+    color: #ff2b06;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.hah{
+    text-align: center;
+}
+.bout {
+    
+    font-size: 50px;
+    color: #ff2b06;
+}
+.section-features{
+    text-align: center;
+}
+/*meet the team*/
+.pic-core{
+    list-style:none;
+    width: 100%;
+}
+.pic-core li{
+    display: inline-block;
+    width: 25%;
+    float:left;
+}
+.coreteam{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.coreteam img{
+    height: auto;
+    width: 100%;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    opacity: 0.7;
+    
+}
+.coreteam img:hover{
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    opacity: 1;
+}
+.clearfix{zoom:1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.twopic{
+    margin-left: 25%;
+}
+/*social media section*/
+.social-media{
+    margin-top: 30px;
+    
+}
+.social-media:first-child{
+    text-align: right;
+    padding-right: 3%;
+}
+.social-media{
+    padding-left: 3%;
+}
+.iphone{
+    width: 40%;
+}
+.btn-social img{
+    height: 50px;
+    width: auto;
+
+}
+.check{
+    margin-bottom: 100px; 
+    margin-top: 125px;
+    
+}
+/*chirec section*/
+.chirec-cont{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.65)),to(rgba(0, 0, 0, 0.65))),url(img/chirecc.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0.8),rgba(0, 0, 0, 0.8))url(img/chirecc.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.credits{
+    color: white;
+    font-size: 90%;
+    line-height: 200%;
+    text-transform: uppercase;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    float: left;
+    
+}
+.creditss a{
+    color: white;
+    font-size: 150%;
+    line-height: 200%;
+    text-transform: uppercase;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    float: right;
+    padding-top: 8px;
+}
+.foot{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+ 
